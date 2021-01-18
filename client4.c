@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/socket.h>
@@ -24,7 +25,7 @@ printf("Client Socket Created\n");
 }
 
 address.sin_family=AF_INET;
-address.sin_addr.s_addr=inet_addr("192.168.0.31");
+address.sin_addr.s_addr=inet_addr("127.0.0.1");
 address.sin_port=htons(PORT);
 len=sizeof(address);
 
